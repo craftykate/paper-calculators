@@ -51,6 +51,7 @@
 		&:hover, &:focus, &:active {
 			color: $main;
 			text-decoration: underline;
+			cursor: pointer;
 		}
 	}
 
