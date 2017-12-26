@@ -9,6 +9,7 @@ import './App.css';
 import Header from '../Header/Header';
 import Home from '../Home/Home';
 import Bag from '../Bag/Bag';
+import Footer from '../Footer/Footer';
 
 class App extends Component {
   setTitle(name) {
@@ -24,6 +25,7 @@ class App extends Component {
             <Route exact path="/" render={props => <Home title={this.setTitle} />} />
             <Route path="/bag" render={props => <Bag title={this.setTitle} />} />
           </div>
+          <Footer />
         </div>
       </Router>
     );

@@ -1,0 +1,18 @@
+@import "../../styles/_colors.scss";
+
+footer {
+  border-top: 1px solid $main;
+  padding-top: 10px;
+  text-align: center;
+  ul {
+    li {
+      display: inline;
+			&:not(:first-child) {
+				&::before {
+					content: " | ";
+					color: $text;
+				}
+			}
+    }
+  }
+}
