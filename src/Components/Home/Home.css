@@ -1,10 +1,10 @@
-#content.home ul.navButtons {
+.home ul.navButtons {
   text-align: center; }
-  #content.home ul.navButtons li {
+  .home ul.navButtons li {
     display: inline; }
-    #content.home ul.navButtons li:not(:first-child) {
+    .home ul.navButtons li:not(:first-child) {
       margin-left: 20px; }
-    #content.home ul.navButtons li a {
+    .home ul.navButtons li a {
       display: inline-block;
       cursor: pointer;
       margin: 0 auto;
@@ -19,11 +19,11 @@
       outline: none;
       text-decoration: none;
       width: 100px; }
-      #content.home ul.navButtons li a:hover {
+      .home ul.navButtons li a:hover {
         background-color: #1d9679; }
 
 @media (max-width: 500px) {
-  #content.home ul.navButtons li {
+  .home ul.navButtons li {
     display: block; }
-    #content.home ul.navButtons li:not(:first-child) {
+    .home ul.navButtons li:not(:first-child) {
       margin: 20px 0 0 0; } }

@@ -22,8 +22,10 @@ class App extends Component {
         <div>
           <Header />
           <div id="wrapper">
-            <Route exact path="/" render={props => <Home title={this.setTitle} />} />
-            <Route path="/bag" render={props => <Bag title={this.setTitle} />} />
+            <div id="content">
+              <Route exact path="/" render={props => <Home title={this.setTitle} />} />
+              <Route path="/bag" render={props => <Bag title={this.setTitle} />} />
+            </div>
           </div>
           <Footer />
         </div>

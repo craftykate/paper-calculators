@@ -8,7 +8,7 @@ class Home extends Component {
   render() {
     this.props.title("");
     return (
-      <div id="content" className="home">
+      <div className="home">
         <h2>Quick Links</h2>
         <ul className="navButtons">
           <li><Link to="/bag">Gift Bag</Link></li>
