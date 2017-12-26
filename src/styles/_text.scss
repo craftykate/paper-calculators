@@ -1,34 +1,34 @@
 //*============TEXT STYLING============*/
-body {
-	font: {
-		family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-		size: 1em;
-		color: $text;
+	body {
+		font: {
+			family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+			size: 1em;
+			color: $text;
+		}
 	}
-}
 
-p {
-	margin-bottom: 1em;
-	line-height:120%;
-	text-align:justify;
-}
-
-a {
-	color: $accent;
-	&:visited {
+	p {
+		margin-bottom: 1em;
+		line-height:120%;
+		text-align:justify;
 	}
-	&:hover {
-		color: $main;
-		text-decoration: underline;
-		cursor: pointer;
+
+	a {
+		color: $accent;
+		&:visited {
+		}
+		&:hover {
+			color: $main;
+			text-decoration: underline;
+			cursor: pointer;
+		}
 	}
-}
 
-i, em {
-	font-style:italic;
-}
+	i, em {
+		font-style:italic;
+	}
 
-strong {
-	font-weight:bold;
-}
+	strong {
+		font-weight:bold;
+	}
 //*============END TEXT STYLING============*/

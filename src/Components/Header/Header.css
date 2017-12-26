@@ -1,0 +1,24 @@
+header {
+  position: relative;
+  padding: 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 7px 1px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 7px 1px; }
+  header h1 {
+    font-size: 2em;
+    font-color: #545252; }
+  header ul {
+    position: relative;
+    margin-top: 7px; }
+    header ul li {
+      display: inline; }
+      header ul li a {
+        color: #545252;
+        text-decoration: none; }
+        header ul li a:hover {
+          text-decoration: none;
+          color: #e5007a; }
+        header ul li a.active {
+          color: #ADB870; }
+      header ul li:not(:first-child)::before {
+        content: " | ";
+        color: #ADB870; }

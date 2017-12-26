@@ -1,3 +1,38 @@
+@import '../../styles/_colors.scss';
+@import '../../styles/_mixins.scss';
+
 header {
-  
+  position: relative;
+  padding: 20px;
+  @include boxshadow;
+  h1 {
+    font: {
+      size: 2em;
+      color: $text;
+    }
+  }
+	ul {
+		position: relative;
+    margin-top: 7px;
+		li {
+			display: inline;
+			a {
+				color: $text;
+				text-decoration: none;
+        &:hover {
+          text-decoration: none;
+          color: $accent;
+        }
+        &.active {
+          color: $main;
+        }
+			}
+			&:not(:first-child) {
+				&::before {
+					content: " | ";
+					color: $main;
+				}
+			}
+		}
+  }
 }
