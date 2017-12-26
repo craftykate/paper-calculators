@@ -10,10 +10,7 @@ class Bag extends Component {
       width: '',
       depth: ''
     }
-    let paper_height;
-    let paper_width;
   }
-
 
   // componentDidUpdate() {
   // }
@@ -26,8 +23,16 @@ class Bag extends Component {
     }
   }
 
-  calculate = () => {
+  calculateBag = () => {
+    const height = Number(this.state.height);
+    const width = Number(this.state.width);
+    const depth = Number(this.state.depth);
 
+    const paperHeight = (1 + height + (depth / 2) + 0.25);
+    const paperWidth = (0.5 + (depth * 2) + (width * 2));
+    const twoPapers = (((paperWidth - 0.5) / 2) + 0.5);
+    const bottomUp = (depth + 0.25);
+    const sidesIn = (depth / 2);
   }
 
   render() {
@@ -52,7 +57,7 @@ class Bag extends Component {
           onChange={(event) => this.updateValues(event, 'depth')}
           />
         <p
-          onClick={this.calculate}
+          onClick={this.calculateBag}
           className="button">
           Calculate
         </p>
