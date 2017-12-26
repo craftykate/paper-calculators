@@ -16,9 +16,9 @@ header {
         text-decoration: none; }
         header ul li a:hover {
           text-decoration: none;
-          color: #e5007a; }
+          color: #25c19b; }
         header ul li a.active {
-          color: #ADB870; }
+          color: #ee8800; }
       header ul li:not(:first-child)::before {
         content: " | ";
-        color: #ADB870; }
+        color: #ee8800; }

@@ -1,0 +1,29 @@
+#content.home ul.navButtons li {
+  display: inline; }
+  #content.home ul.navButtons li:not(:first-child) {
+    margin-left: 20px; }
+  #content.home ul.navButtons li a {
+    display: inline-block;
+    cursor: pointer;
+    margin: 1em auto 0 auto;
+    text-align: center;
+    padding: .5em 1em;
+    border-radius: 10px;
+    background-color: #25c19b;
+    text-align: center;
+    font-size: 1em;
+    transition: background-color .25s;
+    color: white;
+    outline: none;
+    text-decoration: none;
+    width: 100px; }
+    #content.home ul.navButtons li a:hover {
+      background-color: #1d9679; }
+
+@media (max-width: 500px) {
+  #content.home ul.navButtons {
+    text-align: center; }
+    #content.home ul.navButtons li {
+      display: block; }
+      #content.home ul.navButtons li:not(:first-child) {
+        margin-left: 0; } }

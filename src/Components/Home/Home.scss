@@ -1,0 +1,29 @@
+@import '../../styles/_colors.scss';
+@import '../../styles/_mixins.scss';
+
+#content.home {
+  ul.navButtons {
+    li {
+      display: inline;
+      &:not(:first-child) {
+        margin-left: 20px;
+      }
+      a {
+        display: inline-block;
+        @include buttonstyle($accent, darken($accent, 10%));
+        width: 100px;
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    ul.navButtons {
+      text-align: center;
+      li {
+        display: block;
+        &:not(:first-child) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
