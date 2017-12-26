@@ -21,7 +21,12 @@ class Bag extends Component {
   updateValues = (event, field) => {
     if (!isNaN(event.target.value)) {
       this.setState({
+        errorMessage: null,
         [field]: event.target.value
+      })
+    } else {
+      this.setState({
+        errorMessage: "Only numbers and decimal points allowed"
       })
     }
   }
@@ -40,7 +45,7 @@ class Bag extends Component {
       this.calculateBag();
     } else {
       this.setState({
-        errorMessage: "You must enter numbers for each dimension",
+        errorMessage: "Each measurement is required",
         showBagInstruction: false
       })
     }
