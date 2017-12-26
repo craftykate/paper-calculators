@@ -30,7 +30,7 @@ header {
 			&:not(:first-child) {
 				&::before {
 					content: " | ";
-					color: $main;
+					color: $text;
 				}
 			}
 		}

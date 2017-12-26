@@ -21,4 +21,4 @@ header {
           color: #ee8800; }
       header ul li:not(:first-child)::before {
         content: " | ";
-        color: #ee8800; }
+        color: #545252; }

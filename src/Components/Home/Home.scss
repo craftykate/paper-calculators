@@ -3,6 +3,7 @@
 
 #content.home {
   ul.navButtons {
+    text-align: center;
     li {
       display: inline;
       &:not(:first-child) {
@@ -17,11 +18,10 @@
   }
   @media (max-width: 500px) {
     ul.navButtons {
-      text-align: center;
       li {
         display: block;
         &:not(:first-child) {
-          margin-left: 0;
+          margin: 20px 0 0 0;
         }
       }
     }

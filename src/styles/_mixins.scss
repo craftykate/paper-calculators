@@ -37,7 +37,7 @@
 	// ex:
 	@mixin buttonstyle ($color: gray, $hover: darken(gray, 40%)) {
 	  cursor: pointer;
-	  margin: 1em auto 0 auto;
+	  margin: 0 auto;
 	  text-align: center;
 	  padding: .5em 1em;
 	  border-radius: 10px;
