@@ -27,6 +27,7 @@
 
 	i, em {
 		font-style:italic;
+		color: lighten($text, 20%);
 	}
 
 	strong {
