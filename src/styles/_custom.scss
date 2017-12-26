@@ -46,6 +46,14 @@
 				display: inline-block;
 				clear: both;
 			}
+			a.clear {
+				margin-left: 20px;
+			}
+			p.error {
+				margin-top: 10px;
+				color: $error;
+				font-style: italic;
+			}
 			div.instructions {
 				margin-top: 25px;
 				padding-top: 10px;
