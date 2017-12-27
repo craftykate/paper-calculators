@@ -10,7 +10,7 @@ const Header = (props) => (
     <ul>
       <li><NavLink exact to="/">Home</NavLink></li>
       <li><NavLink to="/bag">Gift Bag</NavLink></li>
-      {/*<li><NavLink to="/envelope">Envelope</NavLink></li>*/}
+      <li><NavLink to="/envelope">Envelope</NavLink></li>
     </ul>
   </header>
 );

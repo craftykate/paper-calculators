@@ -12,7 +12,11 @@ const Envelope = (props) => {
   ]
 
   return (
-    <Calculator
+    <div>
+      <h2>In progress!</h2>
+      <p>Building this now, check back soon!</p>
+    </div>
+    /*<Calculator
       name="Envelope Calculator"
       state={props.state}
       inputs={inputs}
@@ -20,7 +24,7 @@ const Envelope = (props) => {
       updateValues={props.updateValues}
       checkInputs={props.checkInputs}
       reset={props.reset}
-    />
+    />*/
   );
 }
 

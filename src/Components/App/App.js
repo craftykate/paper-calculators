@@ -8,7 +8,7 @@ import { calculations } from '../../utils/calculations';
 import Header from '../Header/Header';
 import Home from '../Home/Home';
 import Bag from '../Bag/Bag';
-// import Envelope from '../Envelope/Envelope';
+import Envelope from '../Envelope/Envelope';
 import Footer from '../Footer/Footer';
 
 
@@ -113,7 +113,7 @@ class App extends Component {
                   title={this.setTitle}
                 />
               }/>
-            {/*<Route path="/envelope" render={props =>
+              <Route path="/envelope" render={props =>
                 <Envelope
                   state={this.state}
                   updateValues={this.updateValues}
@@ -121,7 +121,7 @@ class App extends Component {
                   reset={this.reset}
                   title={this.setTitle}
                 />
-              }/>*/}
+              }/>
             </div>
           </div>
           <Footer />
