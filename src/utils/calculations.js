@@ -53,5 +53,31 @@ export const calculations = {
         </ol>
       </div>
     )
+  },
+
+  calculateBox(h, w, d) {
+    const height = Number(h);
+    const width = Number(w);
+    const depth = Number(d);
+
+    // calculate paper size and where the punches are
+    const firstPunch = Math.sqrt(((width + 1)**2)/2) - 0.35
+    const secondPunch = Math.sqrt(((width + height + height + 1)**2)/2) - 0.35
+    const thirdPunch = Math.sqrt(((depth + 1)**2)/2) - 0.35
+    const fourthPunch = Math.sqrt(((depth + height + height + 1)**2)/2) - 0.35
+    const paperSize = secondPunch + thirdPunch
+
+    return (
+      <div>
+        <p><i>(These instructions might not make much sense until I get some diagrams up.)</i></p>
+        <ol>
+          <li>Cut paper {paperSize.toFixed(2)} square</li>
+          <li>Pick any side to be side 1. The opposite side is side 3. The other sides are sides 2 and 4.</li>
+          <li>Punch measurements on sides 1 and 3: {firstPunch.toFixed(2)} and {secondPunch.toFixed(2)}</li>
+          <li>Punch measurements on side 2 and 4: {thirdPunch.toFixed(2)} and {fourthPunch.toFixed(2)}</li>
+          <li>Cut bottom liner 1/4{`"`} or 1/8{`"`} smaller than {width.toFixed(2)} by {depth.toFixed(2)}</li>
+        </ol>
+      </div>
+    )
   }
 }

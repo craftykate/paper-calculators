@@ -9,6 +9,7 @@ import Header from '../Header/Header';
 import Home from '../Home/Home';
 import Bag from '../Bag/Bag';
 import Envelope from '../Envelope/Envelope';
+import Box from '../Box/Box';
 import Footer from '../Footer/Footer';
 
 
@@ -85,6 +86,7 @@ class App extends Component {
     return calculations.calculateEnvelope(this.state.height, this.state.width);
   }
   calculateBox = () => {
+    return calculations.calculateBox(this.state.height, this.state.width, this.state.depth);
   }
 
   // take instructions from calculators and update state variables
@@ -115,6 +117,15 @@ class App extends Component {
               }/>
               <Route path="/envelope" render={props =>
                 <Envelope
+                  state={this.state}
+                  updateValues={this.updateValues}
+                  checkInputs={this.checkInputs}
+                  reset={this.reset}
+                  title={this.setTitle}
+                />
+              }/>
+              <Route path="/box" render={props =>
+                <Box
                   state={this.state}
                   updateValues={this.updateValues}
                   checkInputs={this.checkInputs}

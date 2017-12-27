@@ -11,6 +11,7 @@ const Header = (props) => (
       <li><NavLink exact to="/">Home</NavLink></li>
       <li><NavLink to="/bag">Gift Bag</NavLink></li>
       <li><NavLink to="/envelope">Envelope</NavLink></li>
+      <li><NavLink to="/box">Box</NavLink></li>
     </ul>
   </header>
 );
