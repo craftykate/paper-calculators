@@ -27,6 +27,7 @@ const Calculator = (props) => {
           <div key={i}>
             <p className="inputTitle">{input[1]}:</p>
             <input
+              type="number"
               value={props.state[input[0]]}
               onChange={(event) => props.updateValues(event, input[0])}
               />
