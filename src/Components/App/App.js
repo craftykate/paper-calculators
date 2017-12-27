@@ -56,7 +56,8 @@ class App extends Component {
       height: '',
       width: '',
       depth: '',
-      errorMessage: null
+      errorMessage: null,
+      showInstructions: false
     })
   }
 
