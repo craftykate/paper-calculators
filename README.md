@@ -4,7 +4,7 @@ A site with three different calculators for making stuff out of paper. One for g
 
 See it live at [kates-paper-calculators.surge.sh](http://kates-paper-calculators.surge.sh/)
 
-<img src="src/Components/Home/all-three.jpg" alt="Paper creations" style="width: 400px;"/>
+<img src="http://kates-paper-calculators.surge.sh/static/media/all-three.653128a4.jpg" alt="Paper creations" width="300"/>
 
 ## Background
 
@@ -22,8 +22,8 @@ I'm using Sass for this so I also built myself an automated bash script that han
 
 I built this entire site in one day. It's very functional, there are just a couple things I want to fix/improve:
 
-* Images
-  * I'm going to take pictures of the steps and the final product to put online.
+* ~~Images~~
+  * ~~I'm going to take pictures of the steps and the final product to put online.~~
 * ~~Change calculations so they come out as fractions~~
   * ~~The program I wrote on my computer rounds calculations to the nearest 1/6th" and displays the number as a fraction (so instead of 8.44 you get 8 7/16). This is helpful because it's easier for me to find 8 7/16ths on a ruler than try to calculate in my head where 8.44 would be. Anyway, I just have to rewrite that functionality in JavaScript.~~
 * Fix it so refresh doesn't break site
