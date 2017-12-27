@@ -6,6 +6,8 @@ See it live at [kates-paper-calculators.surge.sh](http://kates-paper-calculators
 
 <img src="http://kates-paper-calculators.surge.sh/static/media/all-three.653128a4.jpg" alt="Paper creations" width="300"/>
 
+<img src="public/screenshot.png" alt="Paper creations" width="300"/>
+
 ## Background
 
 I love making things out of paper. I have one of those [punch boards](http://www.wermemorykeepers.com/default.aspx?PageID=956&CategoryID=804&ProductID=15548&ItemID=17208&RootCatCode=08000) that makes folding envelopes and boxes a breeze - except no one seems to have proper directions for folding things to exact dimensions. So I reverse engineered some items, took measurements, built _proper_ formulas and built some programs to do the calculations for me.
