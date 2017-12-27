@@ -1,7 +1,7 @@
 import React from 'react';
 
-export const bagCalculations = {
-  
+export const calculations = {
+
   calculateBag(h, w, d) {
     const height = Number(h);
     const width = Number(w);
@@ -32,5 +32,12 @@ export const bagCalculations = {
         <li>Open up bag and crease folds in the proper directions.</li>
       </ol>
     )
+  },
+
+  calculateEnvelope(h, w) {
+    // const height = Number(h);
+    // const width = Number(w);
+
+
   }
 }

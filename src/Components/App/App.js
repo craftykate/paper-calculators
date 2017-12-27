@@ -3,11 +3,12 @@ import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom';
-import { bagCalculations } from '../../utils/calculations';
+import { calculations } from '../../utils/calculations';
 
 import Header from '../Header/Header';
 import Home from '../Home/Home';
 import Bag from '../Bag/Bag';
+// import Envelope from '../Envelope/Envelope';
 import Footer from '../Footer/Footer';
 
 
@@ -77,10 +78,10 @@ class App extends Component {
 
   // return instructions from calculators
   calculateBag = () => {
-    return bagCalculations.calculateBag(this.state.height, this.state.width, this.state.depth);
+    return calculations.calculateBag(this.state.height, this.state.width, this.state.depth);
   }
   calculateBox = () => {
-
+    return calculations.calculateEnvelope(this.state.height, this.state.width);
   }
   calculateEnvelope = () => {
 
@@ -112,6 +113,15 @@ class App extends Component {
                   title={this.setTitle}
                 />
               }/>
+            {/*<Route path="/envelope" render={props =>
+                <Envelope
+                  state={this.state}
+                  updateValues={this.updateValues}
+                  checkInputs={this.checkInputs}
+                  reset={this.reset}
+                  title={this.setTitle}
+                />
+              }/>*/}
             </div>
           </div>
           <Footer />
