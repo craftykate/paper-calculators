@@ -13,6 +13,9 @@ import bag11 from '../Components/Bag/bag11.jpg';
 import env1 from '../Components/Envelope/env1.jpg';
 import env2 from '../Components/Envelope/env2.jpg';
 import env3 from '../Components/Envelope/env3.jpg';
+import box1 from '../Components/Box/box1.jpg';
+import box2 from '../Components/Box/box2.jpg';
+import box3 from '../Components/Box/box3.jpg';
 
 
 export const calculations = {
@@ -115,16 +118,19 @@ export const calculations = {
           <li>Cut paper <strong>{this.fractionized(paperSize)}{'"'} square</strong></li>
           <li>
             Pick any side to be side 1. The opposite side is side 3. The other sides are sides 2 and 4
-            <span className="moreInfo">(Score down right side)</span>
+            <p><img src={box1} alt="" /></p>
           </li>
           <li>
             On sides 1 and 3, punch and score at: <strong>{this.fractionized(firstPunch)}{'"'} and {this.fractionized(secondPunch)}{'"'}</strong>
           <span className="moreInfo">If your paper goes off the edge of your ruler for your second measurement, flip the paper over and repeat the first measurement </span>
+            <p><img src={box2} alt="" /></p>
           </li>
           <li>On sides 2 and 4, punch and score at: <strong>{this.fractionized(thirdPunch)}{'"'} and {this.fractionized(fourthPunch)}{'"'}</strong></li>
           <li>Round corners</li>
-          <li>Follow directions on paper punch for folding</li>
-          <li>Optional: cut bottom liner 1/8{`"`} smaller than <strong>{this.fractionized(width)}{'"'} wide x {this.fractionized(depth)}{'"'} tall</strong></li>
+          <li>Follow directions on paper punch for folding. Going rogue like this you'll have to manually make the folds marked with a dashed line:
+            <p><img src={box3} alt="" /></p>
+          </li>
+          <li>Optional: cut bottom liner 1/8{`"`} smaller than <strong>{this.fractionized(width)}{'"'} wide x {this.fractionized(depth)}{'"'} tall</strong> and glue to bottom</li>
         </ol>
       </div>
     )
