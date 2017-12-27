@@ -7,8 +7,8 @@ const Envelope = (props) => {
   props.title("Envelope");
 
   let inputs = [
-    ["height", "Enter envelope height (top to bottom)"],
-    ["width", "Enter envelope width (left to right)"]
+    ["width", "Enter envelope width (left to right)"],
+    ["height", "Enter envelope height (top to bottom)"]
   ]
 
   return (

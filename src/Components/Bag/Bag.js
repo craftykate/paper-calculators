@@ -7,9 +7,9 @@ const Bag = (props) => {
   props.title("Gift Bag");
 
   let inputs = [
-    ["height", "Enter bag height (top to bottom)"],
     ["width", "Enter bag width (left to right)"],
-    ["depth", "Enter bag depth (front to back)"]
+    ["depth", "Enter bag depth (front to back)"],
+    ["height", "Enter bag height (top to bottom)"]
   ]
 
   return (
