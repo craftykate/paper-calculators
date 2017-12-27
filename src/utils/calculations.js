@@ -29,36 +29,36 @@ export const calculations = {
         <li>
           Cut paper <strong>{this.fractionized(paperWidth)}{'"'} wide x {this.fractionized(paperHeight)}{'"'} tall</strong>
           <span className="moreInfo">(If your paper isnt wide enough you can use two pieces of paper one on top of the other. In that case, each paper would need to be <strong>{this.fractionized(twoPapers)}{'"'} wide</strong> - height is the same)</span>
-          <img src={bag1} alt="" />
+          <p><img src={bag1} alt="" /></p>
         </li>
         <li>Fold either left or right side in 1/2{'"'}, fold opposite side in to meet the crease so it tucks under flap snugly. (If using two pieces of paper, fold left side of one paper and right side of the other paper in 1/2{'"'}). Unfold all folds
-          <img src={bag2} alt="" />
-          <img src={bag3} alt="" />
+          <p><img src={bag2} alt="" /></p>
+        <p><img src={bag3} alt="" /></p>
         </li>
         <li>Fold top down 1{'"'} then unfold
-          <img src={bag4} alt="" />
+          <p><img src={bag4} alt="" /></p>
         </li>
         <li>Carefully apply glue to inside of flap(s), fold top down again (being careful to leave open on glue end) and tuck other side into flap and press down, making sure paper fits snugly up against crease
-          <img src={bag5} alt="" />
+          <p><img src={bag5} alt="" /></p>
         </li>
         <li>Fold bottom up  <strong>{this.fractionized(bottomUp)}{'"'}</strong>
-          <img src={bag6} alt="" />
+          <p><img src={bag6} alt="" /></p>
         </li>
         <li>Pinch sides of bottom together so side creases are in line with bottom crease
-          <img src={bag7} alt="" />
+          <p><img src={bag7} alt="" /></p>
         </li>
         <li>Fold bottom and top edges towards middle crease, overlapping middle crease by 1/4{'"'}. Glue overlap
-          <img src={bag8} alt="" />
+          <p><img src={bag8} alt="" /></p>
         </li>
         <li>Fold sides in <strong>{this.fractionized(sidesIn)}{'"'}</strong>
-          <img src={bag9} alt="" />
+          <p><img src={bag9} alt="" /></p>
       </li>
         <li>Decorate bag if desired before unfolding</li>
         <li>Open up bag and crease folds in the proper directions
-          <img src={bag10} alt="" />
+          <p><img src={bag10} alt="" /></p>
         </li>
         <li>Optional: fold top down 1{'"'} and punch holes through layers, threading ribbon through holes to secure shut
-          <img src={bag11} alt="" />
+          <p><img src={bag11} alt="" /></p>
         </li>
       </ol>
     )
