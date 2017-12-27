@@ -12,8 +12,6 @@ export const calculations = {
     const twoPapers = (((paperWidth - 0.5) / 2) + 0.5);
     const bottomUp = (depth + 0.25);
     const sidesIn = (depth / 2);
-    paperHeight = paperHeight;
-    paperWidth = paperWidth;
 
     return (
       <ol>
