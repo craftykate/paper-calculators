@@ -10,6 +10,10 @@ import bag8 from '../Components/Bag/bag8.jpg';
 import bag9 from '../Components/Bag/bag9.jpg';
 import bag10 from '../Components/Bag/bag10.jpg';
 import bag11 from '../Components/Bag/bag11.jpg';
+import env1 from '../Components/Envelope/env1.jpg';
+import env2 from '../Components/Envelope/env2.jpg';
+import env3 from '../Components/Envelope/env3.jpg';
+
 
 export const calculations = {
 
@@ -74,17 +78,20 @@ export const calculations = {
 
     return (
       <div>
-        <p><i>(These instructions might not make much sense until I get some diagrams up.)</i></p>
         <ol>
           <li>Cut paper <strong>{this.fractionized(paperSize)}{'"'} square</strong></li>
           <li>
             Pick any side to be side 1. The opposite side is side 3. The other sides are sides 2 and 4
-            <span className="moreInfo">(Score down right side)</span>
+            <p><img src={env1} alt="" /></p>
           </li>
-          <li>On sides 1 and 3, punch and score at: <strong>{this.fractionized(firstPunch)}{'"'}</strong></li>
+          <li>On sides 1 and 3, punch and score at: <strong>{this.fractionized(firstPunch)}{'"'}</strong>
+            <p><img src={env2} alt="" /></p>
+          </li>
           <li>On sides 2 and 4, punch and score at: <strong>{this.fractionized(secondPunch)}{'"'}</strong></li>
           <li>Round corners</li>
-          <li>Fold your sides and bottom in however you like. Glue overlaps to secure</li>
+          <li>Fold your sides and bottom in however you like. Glue overlaps to secure
+            <p><img src={env3} alt="" /></p>
+          </li>
         </ol>
       </div>
     )

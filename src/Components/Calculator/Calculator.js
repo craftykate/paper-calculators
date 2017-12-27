@@ -1,5 +1,6 @@
 import React from 'react';
 import bag from '../Bag/bag11.jpg';
+import env from '../Envelope/env4.jpg';
 
 
 const Calculator = (props) => {
@@ -21,6 +22,7 @@ const Calculator = (props) => {
 
   let imageTag = "";
   if (props.calculatorType === 'bag') imageTag = (<img src={bag} alt="" />) ;
+  if (props.calculatorType === 'envelope') imageTag = (<img src={env} alt="" />) ;
 
   return (
     <div className="calculator">
