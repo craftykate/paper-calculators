@@ -104,13 +104,13 @@ class App extends Component {
             <div id="content">
               <Route exact path="/" render={props => <Home title={this.setTitle} />} />
               <Route path="/bag" render={props =>
-                  <Bag
-                    state={this.state}
-                    updateValues={this.updateValues}
-                    checkInputs={this.checkInputs}
-                    reset={this.reset}
-                    title={this.setTitle}
-                  />
+                <Bag
+                  state={this.state}
+                  updateValues={this.updateValues}
+                  checkInputs={this.checkInputs}
+                  reset={this.reset}
+                  title={this.setTitle}
+                />
               }/>
             </div>
           </div>
