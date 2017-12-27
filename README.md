@@ -4,8 +4,10 @@ A site with three different calculators for making stuff out of paper. One for g
 
 See it live at [kates-paper-calculators.surge.sh](http://kates-paper-calculators.surge.sh/)
 
+Pretty paper creations:
 <img src="http://kates-paper-calculators.surge.sh/static/media/all-three.653128a4.jpg" alt="Paper creations" width="300"/>
 
+Gift bag calculator page:
 <img src="public/screenshot.png" alt="Paper creations" width="300"/>
 
 ## Background
