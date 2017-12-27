@@ -25,4 +25,4 @@ I built this entire site in one day. It's very functional, there are just a coup
 * Change calculations so they come out as fractions
   * The program I wrote on my computer rounds calculations to the nearest 1/6th" and displays the number as a fraction (so instead of 8.44 you get 8 7/16). This is helpful because it's easier for me to find 8 7/16ths on a ruler than try to calculate in my head where 8.44 would be. Anyway, I just have to rewrite that functionality in JavaScript.
 * Images
- * I'm going to take pictures of the steps and the final product to put online.
+  * I'm going to take pictures of the steps and the final product to put online.
