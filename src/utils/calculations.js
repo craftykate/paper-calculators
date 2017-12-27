@@ -113,7 +113,6 @@ export const calculations = {
 
     return (
       <div>
-        <p><i>(These instructions might not make much sense until I get some diagrams up.)</i></p>
         <ol>
           <li>Cut paper <strong>{this.fractionized(paperSize)}{'"'} square</strong></li>
           <li>
