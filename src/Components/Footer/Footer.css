@@ -2,7 +2,8 @@ footer {
   border-top: 1px solid #ee8800;
   margin-bottom: 30px;
   padding-top: 10px;
-  text-align: center; }
+  text-align: center;
+  clear: both; }
   footer ul li {
     display: inline; }
     footer ul li:not(:first-child)::before {
