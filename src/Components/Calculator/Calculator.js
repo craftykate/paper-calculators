@@ -1,7 +1,7 @@
 import React from 'react';
-import bag from '../Bag/bag11.jpg';
-import env from '../Envelope/env4.jpg';
-import box from '../Box/box4.jpg';
+import bag from '../Bag/img/bag11.jpg';
+import env from '../Envelope/img/env4.jpg';
+import box from '../Box/img/box4.jpg';
 
 
 const Calculator = (props) => {
