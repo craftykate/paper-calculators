@@ -18,7 +18,7 @@ export const calculations = {
     return (
       <ol>
         <li>
-          Cut paper <strong>{paperHeight}" tall x {paperWidth}" wide</strong>.
+          Cut paper <strong>{paperHeight}{'"'} tall x {paperWidth}{'"'} wide</strong>.
           <span className="moreInfo">If your paper isnt wide enough you can use two pieces of paper one on top of the other. In that case, each paper would need to be <strong>{twoPapers+`\u0022`} wide</strong> (height is the same).</span>
         </li>,
         <li>Fold either left or right side in 1/2{'"'}, fold opposite side in to meet the crease so it tucks under flap snugly. (If using two pieces of paper, fold left side of one paper and right side of the other paper in 1/2{`\u0022`}.) Unfold all folds.</li>
@@ -35,9 +35,23 @@ export const calculations = {
   },
 
   calculateEnvelope(h, w) {
-    // const height = Number(h);
-    // const width = Number(w);
+    const height = Number(h);
+    const width = Number(w);
 
+    const firstPunch = (Math.sqrt(((height + 1)**2)/2) - 0.35);
+    const secondPunch = (Math.sqrt(((width + 1)**2)/2) - 0.35);
+    const paperSize = (firstPunch + secondPunch);
 
+    return (
+      <div>
+        <p><i>(These instructions might not make much sense until I get some diagrams up.)</i></p>
+        <ol>
+          <li>Cut paper <strong>{paperSize.toFixed(2)}{'"'} square.</strong></li>
+          <li>Pick any side to be side 1. The opposite side is side 3. The other sides are sides 2 and 4.</li>
+          <li>Punch measurements on sides 1 and 3: {firstPunch.toFixed(2)}</li>
+          <li>Punch measurements on side 2 and 4: {secondPunch.toFixed(2)}</li>
+        </ol>
+      </div>
+    )
   }
 }

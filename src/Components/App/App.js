@@ -81,11 +81,10 @@ class App extends Component {
   calculateBag = () => {
     return calculations.calculateBag(this.state.height, this.state.width, this.state.depth);
   }
-  calculateBox = () => {
+  calculateEnvelope = () => {
     return calculations.calculateEnvelope(this.state.height, this.state.width);
   }
-  calculateEnvelope = () => {
-
+  calculateBox = () => {
   }
 
   // take instructions from calculators and update state variables
