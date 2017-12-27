@@ -54,6 +54,17 @@
 				color: $error;
 				font-style: italic;
 			}
+			img {
+				display: inline;
+				float: right;
+				width: 200px;
+				@include round(20px);
+				@media (max-width: 600px) {
+					display: block;
+					float: none;
+					margin-bottom: 20px;
+				}
+			}
 			div.instructions {
 				margin-top: 25px;
 				padding-top: 10px;
@@ -70,6 +81,15 @@
 						span.moreInfo {
 							display: block;
 						}
+					}
+				}
+				img {
+					display: block;
+					margin-top: 10px;
+					width: 300px;
+					@include round(20px);
+					@media (max-width: 500px) {
+						width: 100%;
 					}
 				}
 			}

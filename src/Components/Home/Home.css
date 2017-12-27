@@ -22,8 +22,17 @@
       .home ul.navButtons li a:hover {
         background-color: #1d9679; }
 
+.home .imageContainer {
+  margin-top: 30px;
+  text-align: center; }
+  .home .imageContainer img {
+    width: 440px;
+    border-radius: 20px; }
+
 @media (max-width: 500px) {
   .home ul.navButtons li {
     display: block; }
     .home ul.navButtons li:not(:first-child) {
-      margin: 20px 0 0 0; } }
+      margin: 20px 0 0 0; }
+  .home .imageContainer img {
+    width: 100%; } }

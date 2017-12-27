@@ -1,4 +1,15 @@
 import React from 'react';
+import bag1 from '../Components/Bag/bag1.jpg';
+import bag2 from '../Components/Bag/bag2.jpg';
+import bag3 from '../Components/Bag/bag3.jpg';
+import bag4 from '../Components/Bag/bag4.jpg';
+import bag5 from '../Components/Bag/bag5.jpg';
+import bag6 from '../Components/Bag/bag6.jpg';
+import bag7 from '../Components/Bag/bag7.jpg';
+import bag8 from '../Components/Bag/bag8.jpg';
+import bag9 from '../Components/Bag/bag9.jpg';
+import bag10 from '../Components/Bag/bag10.jpg';
+import bag11 from '../Components/Bag/bag11.jpg';
 
 export const calculations = {
 
@@ -17,18 +28,38 @@ export const calculations = {
       <ol>
         <li>
           Cut paper <strong>{this.fractionized(paperWidth)}{'"'} wide x {this.fractionized(paperHeight)}{'"'} tall</strong>
-        <span className="moreInfo">(If your paper isnt wide enough you can use two pieces of paper one on top of the other. In that case, each paper would need to be <strong>{this.fractionized(twoPapers)}{'"'} wide</strong> - height is the same)</span>
+          <span className="moreInfo">(If your paper isnt wide enough you can use two pieces of paper one on top of the other. In that case, each paper would need to be <strong>{this.fractionized(twoPapers)}{'"'} wide</strong> - height is the same)</span>
+          <img src={bag1} alt="" />
         </li>
-        <li>Fold either left or right side in 1/2{'"'}, fold opposite side in to meet the crease so it tucks under flap snugly. (If using two pieces of paper, fold left side of one paper and right side of the other paper in 1/2{'"'}). Unfold all folds</li>
-        <li>Fold top down 1{'"'} then unfold</li>
-        <li>Carefully apply glue to inside of flap(s), fold top down again (being careful to leave open on glue end) and tuck other side into flap and press down, making sure paper fits snugly up against crease</li>
-        <li>Fold bottom up <strong>{this.fractionized(bottomUp)}{'"'}</strong></li>
-        <li>Pinch sides of bottom together so side creases are in line with bottom crease</li>
-        <li>Fold bottom and top edges towards middle crease, overlapping middle crease by 1/4{'"'}. Glue overlap</li>
-        <li>Fold sides in <strong>{this.fractionized(sidesIn)}{'"'}</strong></li>
+        <li>Fold either left or right side in 1/2{'"'}, fold opposite side in to meet the crease so it tucks under flap snugly. (If using two pieces of paper, fold left side of one paper and right side of the other paper in 1/2{'"'}). Unfold all folds
+          <img src={bag2} alt="" />
+          <img src={bag3} alt="" />
+        </li>
+        <li>Fold top down 1{'"'} then unfold
+          <img src={bag4} alt="" />
+        </li>
+        <li>Carefully apply glue to inside of flap(s), fold top down again (being careful to leave open on glue end) and tuck other side into flap and press down, making sure paper fits snugly up against crease
+          <img src={bag5} alt="" />
+        </li>
+        <li>Fold bottom up  <strong>{this.fractionized(bottomUp)}{'"'}</strong>
+          <img src={bag6} alt="" />
+        </li>
+        <li>Pinch sides of bottom together so side creases are in line with bottom crease
+          <img src={bag7} alt="" />
+        </li>
+        <li>Fold bottom and top edges towards middle crease, overlapping middle crease by 1/4{'"'}. Glue overlap
+          <img src={bag8} alt="" />
+        </li>
+        <li>Fold sides in <strong>{this.fractionized(sidesIn)}{'"'}</strong>
+          <img src={bag9} alt="" />
+      </li>
         <li>Decorate bag if desired before unfolding</li>
-        <li>Open up bag and crease folds in the proper directions</li>
-        <li>Optional: fold top down 1{'"'} and punch holes through layers, threading ribbon through holes to secure shut</li>
+        <li>Open up bag and crease folds in the proper directions
+          <img src={bag10} alt="" />
+        </li>
+        <li>Optional: fold top down 1{'"'} and punch holes through layers, threading ribbon through holes to secure shut
+          <img src={bag11} alt="" />
+        </li>
       </ol>
     )
   },
@@ -46,10 +77,14 @@ export const calculations = {
         <p><i>(These instructions might not make much sense until I get some diagrams up.)</i></p>
         <ol>
           <li>Cut paper <strong>{this.fractionized(paperSize)}{'"'} square</strong></li>
-          <li>Pick any side to be side 1. The opposite side is side 3. The other sides are sides 2 and 4</li>
-          <li>Punch measurements on sides 1 and 3: <strong>{this.fractionized(firstPunch)}{'"'}</strong></li>
-          <li>Punch measurements on side 2 and 4: <strong>{this.fractionized(secondPunch)}{'"'}</strong></li>
-          <li>Fold your sides in, then your bottom up. Glue overlaps to secure</li>
+          <li>
+            Pick any side to be side 1. The opposite side is side 3. The other sides are sides 2 and 4
+            <span className="moreInfo">(Score down right side)</span>
+          </li>
+          <li>On sides 1 and 3, punch and score at: <strong>{this.fractionized(firstPunch)}{'"'}</strong></li>
+          <li>On sides 2 and 4, punch and score at: <strong>{this.fractionized(secondPunch)}{'"'}</strong></li>
+          <li>Round corners</li>
+          <li>Fold your sides and bottom in however you like. Glue overlaps to secure</li>
         </ol>
       </div>
     )
@@ -71,9 +106,16 @@ export const calculations = {
         <p><i>(These instructions might not make much sense until I get some diagrams up.)</i></p>
         <ol>
           <li>Cut paper <strong>{this.fractionized(paperSize)}{'"'} square</strong></li>
-          <li>Pick any side to be side 1. The opposite side is side 3. The other sides are sides 2 and 4</li>
-          <li>Punch measurements on sides 1 and 3: <strong>{this.fractionized(firstPunch)}{'"'} and {this.fractionized(secondPunch)}{'"'}</strong></li>
-          <li>Punch measurements on side 2 and 4: <strong>{this.fractionized(thirdPunch)}{'"'} and {this.fractionized(fourthPunch)}{'"'}</strong></li>
+          <li>
+            Pick any side to be side 1. The opposite side is side 3. The other sides are sides 2 and 4
+            <span className="moreInfo">(Score down right side)</span>
+          </li>
+          <li>
+            On sides 1 and 3, punch and score at: <strong>{this.fractionized(firstPunch)}{'"'} and {this.fractionized(secondPunch)}{'"'}</strong>
+          <span className="moreInfo">If your paper goes off the edge of your ruler for your second measurement, flip the paper over and repeat the first measurement </span>
+          </li>
+          <li>On sides 2 and 4, punch and score at: <strong>{this.fractionized(thirdPunch)}{'"'} and {this.fractionized(fourthPunch)}{'"'}</strong></li>
+          <li>Round corners</li>
           <li>Follow directions on paper punch for folding</li>
           <li>Optional: cut bottom liner 1/8{`"`} smaller than <strong>{this.fractionized(width)}{'"'} wide x {this.fractionized(depth)}{'"'} tall</strong></li>
         </ol>
@@ -101,8 +143,8 @@ export const calculations = {
 
   // returns the decimal part of the number as a fraction
   returnFraction(number) {
-    const sixteenths = [0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875];
-    const fractions = ["0", "1/8", "1/4", "3/8", "1/2", "5/8", "3/4", "7/8"];
+    const sixteenths = [0, 0.0625, 0.125, 0.1875, 0.25, 0.3125, 0.375, 0.4375, 0.5, 0.5625, 0.625, 0.6875, 0.75, 0.8125, 0.875, 0.9375];
+    const fractions = ["0", "1/16", "1/8", "3/16", "1/4", "5/16", "3/8", "7/16", "1/2", "9/16", "5/8", "11/16", "3/4", "13/16", "7/8", "15/16"];
     // set up comparison variable
   	let lastMargin = 1
     // variable to store closest fraction

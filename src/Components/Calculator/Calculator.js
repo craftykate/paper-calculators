@@ -1,4 +1,5 @@
 import React from 'react';
+import bag from '../Bag/bag11.jpg';
 
 
 const Calculator = (props) => {
@@ -18,9 +19,13 @@ const Calculator = (props) => {
     errorMessage = props.state.errorMessage
   }
 
+  let imageTag = "";
+  if (props.calculatorType === 'bag') imageTag = (<img src={bag} alt="" />) ;
+
   return (
     <div className="calculator">
       <h2>{props.name}</h2>
+      {imageTag}
       <p className="description">Enter all measurements in inches as decimal numbers. Ex: 4.5</p>
       {props.inputs.map((input, i) => {
         return (
