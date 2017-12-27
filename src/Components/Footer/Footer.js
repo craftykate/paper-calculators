@@ -3,6 +3,7 @@ import './Footer.css';
 
 
 const Footer = (props) => (
+  
   <footer>
     <ul>
       <li>Kate's Paper Calculators</li>

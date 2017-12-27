@@ -1,5 +1,5 @@
 import React from 'react';
-import './Calculator.css';
+
 
 const Calculator = (props) => {
 
@@ -13,7 +13,7 @@ const Calculator = (props) => {
     );
   }
 
-  let errorMessage = " ";
+  let errorMessage = "";
   if (props.state.errorMessage) {
     errorMessage = props.state.errorMessage
   }

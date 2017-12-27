@@ -1,32 +1,28 @@
-import React, { Component } from 'react';
-import './Bag.css';
+import React from 'react';
 import Calculator from '../Calculator/Calculator';
 
 
-class Bag extends Component {
+const Bag = (props) => {
 
+  props.title("Gift Bag");
 
-  render() {
-    this.props.title("Gift Bag");
+  let inputs = [
+    ["height", "Enter bag height (top to bottom)"],
+    ["width", "Enter bag width (left to right)"],
+    ["depth", "Enter bag depth (front to back)"]
+  ]
 
-    let inputs = [
-      ["height", "Enter bag height (top to bottom)"],
-      ["width", "Enter bag width (left to right)"],
-      ["depth", "Enter bag depth (front to back)"]
-    ]
-
-    return (
-      <Calculator
-        name="Gift Bag Calculator"
-        state={this.props.state}
-        inputs={inputs}
-        calculatorType='bag'
-        updateValues={this.props.updateValues}
-        checkInputs={this.props.checkInputs}
-        reset={this.props.reset}
-      />
-    );
-  }
+  return (
+    <Calculator
+      name="Gift Bag Calculator"
+      state={props.state}
+      inputs={inputs}
+      calculatorType='bag'
+      updateValues={props.updateValues}
+      checkInputs={props.checkInputs}
+      reset={props.reset}
+    />
+  );
 }
 
 export default Bag;

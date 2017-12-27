@@ -1,6 +1,7 @@
 import React from 'react';
 
 export const bagCalculations = {
+  
   calculateBag(h, w, d) {
     const height = Number(h);
     const width = Number(w);

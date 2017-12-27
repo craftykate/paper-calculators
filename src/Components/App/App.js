@@ -3,12 +3,13 @@ import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom';
-import './App.css';
-import {bagCalculations} from '../../utils/calculations';
+import { bagCalculations } from '../../utils/calculations';
+
 import Header from '../Header/Header';
 import Home from '../Home/Home';
 import Bag from '../Bag/Bag';
 import Footer from '../Footer/Footer';
+
 
 class App extends Component {
   constructor(props) {
@@ -23,10 +24,12 @@ class App extends Component {
     }
   }
 
+  // set tab title
   setTitle(name) {
     name === "" ? document.title = `Kate's Calculators` : document.title = `Kate's Calculators | ${name}`;
   }
 
+  // update state with each keystroke in input fields if it's a number
   updateValues = (event, field) => {
     if (!isNaN(event.target.value)) {
       this.setState({
@@ -38,6 +41,7 @@ class App extends Component {
     }
   }
 
+  // show error message
   showError = (msg) => {
     this.setState({
       errorMessage: msg,
@@ -45,6 +49,7 @@ class App extends Component {
     })
   }
 
+  // clear calculator input fields variables
   reset = () => {
     this.setState({
       height: '',
@@ -54,6 +59,7 @@ class App extends Component {
     })
   }
 
+  // make sure fields are complete and go to correct calculator
   checkInputs = (type) => {
     // if it's a bag or a box and all the fields are there
     if ((type === 'bag' && (this.state.height && this.state.width && this.state.depth)) || (type === 'box' && (this.state.height && this.state.width && this.state.depth))) {
@@ -69,18 +75,18 @@ class App extends Component {
     }
   }
 
+  // return instructions from calculators
   calculateBag = () => {
     return bagCalculations.calculateBag(this.state.height, this.state.width, this.state.depth);
   }
-
   calculateBox = () => {
 
   }
-
   calculateEnvelope = () => {
 
   }
 
+  // take instructions from calculators and update state variables
   showInstructions = (directions) => {
     this.setState({
       errorMessage: null,
