@@ -5,7 +5,7 @@ import './Home.css';
 
 const Home = (props) => {
 
-  this.props.title("");
+  props.title("");
 
   return (
     <div className="home">
