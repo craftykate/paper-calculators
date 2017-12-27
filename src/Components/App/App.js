@@ -102,7 +102,7 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Header />
+          <Header reset={this.reset}/>
           <div id="wrapper">
             <div id="content">
               <Route exact path="/" render={props => <Home title={this.setTitle} />} />

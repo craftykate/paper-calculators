@@ -8,10 +8,10 @@ const Header = (props) => (
   <header>
     <h1>Kate's Paper Calculators</h1>
     <ul>
-      <li><NavLink exact to="/">Home</NavLink></li>
-      <li><NavLink to="/bag">Gift Bag</NavLink></li>
-      <li><NavLink to="/envelope">Envelope</NavLink></li>
-      <li><NavLink to="/box">Box</NavLink></li>
+      <li><NavLink exact to="/" onClick={props.reset}>Home</NavLink></li>
+      <li><NavLink to="/bag" onClick={props.reset}>Gift Bag</NavLink></li>
+      <li><NavLink to="/envelope" onClick={props.reset}>Envelope</NavLink></li>
+      <li><NavLink to="/box" onClick={props.reset}>Box</NavLink></li>
     </ul>
   </header>
 );
