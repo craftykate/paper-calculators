@@ -50,6 +50,7 @@ export const calculations = {
           <li>Pick any side to be side 1. The opposite side is side 3. The other sides are sides 2 and 4.</li>
           <li>Punch measurements on sides 1 and 3: <strong>{firstPunch.toFixed(2)}</strong></li>
           <li>Punch measurements on side 2 and 4: <strong>{secondPunch.toFixed(2)}</strong></li>
+          <li>Follow directions on paper punch for folding.</li>
         </ol>
       </div>
     )
@@ -71,11 +72,12 @@ export const calculations = {
       <div>
         <p><i>(These instructions might not make much sense until I get some diagrams up.)</i></p>
         <ol>
-          <li>Cut paper {paperSize.toFixed(2)} square</li>
+          <li>Cut paper <strong>{paperSize.toFixed(2)} square</strong></li>
           <li>Pick any side to be side 1. The opposite side is side 3. The other sides are sides 2 and 4.</li>
           <li>Punch measurements on sides 1 and 3: <strong>{firstPunch.toFixed(2)} and {secondPunch.toFixed(2)}</strong></li>
           <li>Punch measurements on side 2 and 4: <strong>{thirdPunch.toFixed(2)} and {fourthPunch.toFixed(2)}</strong></li>
           <li>Cut bottom liner 1/4{`"`} or 1/8{`"`} smaller than {width.toFixed(2)} by {depth.toFixed(2)}</li>
+          <li>Follow directions on paper punch for folding.</li>
         </ol>
       </div>
     )
