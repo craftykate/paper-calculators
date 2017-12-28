@@ -26,8 +26,8 @@ I'm using Sass for this so I also built myself an automated bash script that han
 
 I built this entire site in one day. It's very functional, there are just a couple things I want to fix/improve:
 
-* Pull presentation JSX out of calculator methods
-  * I didn't realize the instructions would get so long. Want to return the variables in an object and send them to the individual components as props so they can render their own instructions.
+* ~~Pull presentation JSX out of calculator methods~~
+  * ~~I didn't realize the instructions would get so long. Want to return the variables in an object and send them to the individual components as props so they can render their own instructions.~~
 * ~~Images~~
   * ~~I'm going to take pictures of the steps and the final product to put online.~~
 * ~~Change calculations so they come out as fractions~~

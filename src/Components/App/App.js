@@ -3,8 +3,7 @@ import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom';
-import { calculations } from '../../utils/calculations';
-
+import calculations from '../../utils/calculations';
 import Header from '../Header/Header';
 import Home from '../Home/Home';
 import Bag from '../Bag/Bag';
@@ -23,7 +22,7 @@ class App extends Component {
       depth: '',
       showInstructions: false,
       errorMessage: null,
-      directions: ''
+      variables: ''
     }
   }
 
@@ -79,7 +78,7 @@ class App extends Component {
     }
   }
 
-  // return instructions from calculators
+  // return calculated variables from calculators
   calculateBag = () => {
     return calculations.calculateBag(this.state.height, this.state.width, this.state.depth);
   }
@@ -91,11 +90,11 @@ class App extends Component {
   }
 
   // take instructions from calculators and update state variables
-  showInstructions = (directions) => {
+  showInstructions = (calculatedVariables) => {
     this.setState({
       errorMessage: null,
       showInstructions: true,
-      directions: directions
+      variables: calculatedVariables
     })
   }
 

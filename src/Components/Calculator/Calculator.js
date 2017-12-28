@@ -11,7 +11,7 @@ const Calculator = (props) => {
     instructions = (
       <div className="instructions">
         <h3 className="instructions">Instructions:</h3>
-        {props.state.directions}
+        {props.instructions}
       </div>
     );
   }
