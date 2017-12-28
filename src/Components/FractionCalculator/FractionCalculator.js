@@ -17,12 +17,23 @@ class FractionCalculator extends Component {
   }
 
   undoFraction = () => {
-    if (this.state.fraction && this.state.fraction.includes(" ") && this.state.fraction.includes("/")) {
-      const number = this.state.fraction.split(" ");
-      const wholeNumber = number[0];
-      const fraction = number[1].split("/")
-      const numerator = fraction[0];
-      const denominator = fraction[1];
+    // entry must include a divided by sign
+    if (this.state.fraction.includes("/")) {
+      let wholeNumber;
+      let fraction;
+      // if entry includes a whole number, split it to find number and fraction
+      if (this.state.fraction.includes(" ")) {
+        const number = this.state.fraction.split(" ");
+        wholeNumber = number[0];
+        fraction = number[1];
+      // entry just includes a fraction, so set whole number to 0 and set fraction to the whole thing
+      } else {
+        wholeNumber = 0;
+        fraction = this.state.fraction;
+      }
+      const fractionArray = fraction.split("/")
+      const numerator = fractionArray[0];
+      const denominator = fractionArray[1];
       const decimal = (numerator / denominator);
       const entireNumber = (Number(wholeNumber) + decimal).toFixed(2);
       if (!isNaN(entireNumber)) {
@@ -31,13 +42,15 @@ class FractionCalculator extends Component {
         })
       } else {
         this.setState({
-          errorMessage: 'Be nice, I\'m a simple little calculator',
-          fraction: ''
+          errorMessage: 'Sorry, I don\'t understand that',
+          fraction: '',
+          undoneFraction: ''
         })
       }
     } else {
       this.setState({
-        errorMessage: 'Oops, enter a fraction like this: 4 5/6'
+        errorMessage: 'Oops, enter a fraction like this: 4 5/6',
+        undoneFraction: ''
       })
     }
   }
@@ -100,7 +113,7 @@ class FractionCalculator extends Component {
             {this.state.errorMessage}
           </p>
           <p style={{display: 'inline', marginLeft: '10px'}}>
-            {this.state.undoneFraction}
+            equals: {this.state.undoneFraction}
           </p>
           <p><a onClick={this.undoFraction}>
             Calculate
