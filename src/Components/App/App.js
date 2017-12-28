@@ -9,7 +9,7 @@ import Home from '../Home/Home';
 import Bag from '../Bag/Bag';
 import Envelope from '../Envelope/Envelope';
 import Box from '../Box/Box';
-import Money from '../Money/Money';
+import More from '../More/More';
 import Footer from '../Footer/Footer';
 
 
@@ -20,6 +20,7 @@ class App extends Component {
       height: '',
       width: '',
       depth: '',
+      decimal: '',
       showInstructions: false,
       errorMessage: null,
       variables: ''
@@ -38,12 +39,14 @@ class App extends Component {
         errorMessage: null,
         [field]: event.target.value
       })
+    // with input type="number" this is no longer being reached because the input itself will only allow numbers
     } else {
       this.showError("Only numbers and decimal points allowed");
     }
   }
 
   // show error message
+  // with input type="number" this is no longer being reached because the input itself will only allow numbers
   showError = (msg) => {
     this.setState({
       errorMessage: msg,
@@ -57,8 +60,10 @@ class App extends Component {
       height: '',
       width: '',
       depth: '',
+      decimal: '',
       errorMessage: null,
-      showInstructions: false
+      showInstructions: false,
+      variables: ''
     })
   }
 
@@ -87,6 +92,10 @@ class App extends Component {
   }
   calculateBox = () => {
     return calculations.calculateBox(this.state.height, this.state.width, this.state.depth);
+  }
+
+  runFractions = () => {
+    this.showInstructions(calculations.allFractions(this.state.decimal));
   }
 
   // take instructions from calculators and update state variables
@@ -133,7 +142,16 @@ class App extends Component {
                   title={this.setTitle}
                 />
               }/>
-            <Route path="/more" render={props => <Money />} />
+            <Route path="/more" render={props =>
+                <More
+                  state={this.state}
+                  updateValues={this.updateValues}
+                  checkInputs={this.checkInputs}
+                  runFractions={this.runFractions}
+                  reset={this.reset}
+                  title={this.setTitle}
+                />
+            }/>
             </div>
           </div>
           <Footer />

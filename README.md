@@ -18,7 +18,9 @@ I love making things out of paper. I have one of those [punch boards](http://www
 
 This used to live on my computer in a Ruby program that I launched with an alias from the terminal window, but I thought building it in React would be a great way to practice.
 
-The components are split up between stateful container components and stateless functional components. In fact, there's only one stateful component in the whole app. All presentation stuff is handled by stateless components. All three calculators share the same presentational component with just a few different props passed down. With everything so neatly separated between function and presentation I am able to reuse almost everything for all calculators. This meant when I added a second calculator it took all of three minutes to set up the whole structure for it - all I really had to do was write the function to calculate the math.
+The components are split up between stateful container components and stateless functional components. In fact, there's only one stateful component in the whole calculator app (I added some extra stuff that needs state). All presentation stuff is handled by stateless components. All three calculators share the same presentational component with just a few different props passed down. With everything so neatly separated between function and presentation I am able to reuse almost everything for all calculators. This meant when I added a second calculator it took all of three minutes to set up the whole structure for it - all I really had to do was write the function to calculate the math.
+
+The calculator inputs validate themselves - if you try inputing "3.5r" it will keep the "3.5" but won't save or display the "r". It WILL, however, display an error message saying only numbers allowed. If you try to run the calculator with a missing field it will display an error message saying all fields are required. And it's all done on client-side so there's no waiting for the server to check.
 
 I'm using Sass for this so I also built myself an automated bash script that handles installing and setting up Sass the way I like it.
 
