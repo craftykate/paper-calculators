@@ -10,6 +10,7 @@ import Home from '../Home/Home';
 import Bag from '../Bag/Bag';
 import Envelope from '../Envelope/Envelope';
 import Box from '../Box/Box';
+import Money from '../Money/Money';
 import Footer from '../Footer/Footer';
 
 
@@ -133,6 +134,7 @@ class App extends Component {
                   title={this.setTitle}
                 />
               }/>
+            <Route path="/more" render={props => <Money />} />
             </div>
           </div>
           <Footer />
