@@ -16,7 +16,7 @@ const More = (props) => {
         runFractions={props.runFractions}
         reset={props.reset}
       />
-    <Money />
+      <Money />
     </React.Fragment>
   )
 };
