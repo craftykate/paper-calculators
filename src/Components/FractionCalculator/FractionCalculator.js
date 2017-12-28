@@ -88,7 +88,7 @@ class FractionCalculator extends Component {
                     type="number"
                     value={this.props.state.decimal}
                     onChange={(event) => this.props.updateValues(event, 'decimal')}
-                    style={{width: '50px', fontSize: '100%'}}
+                    style={{width: '80px', fontSize: '100%'}}
                     />
                 </td>
                 <td>{result[0]}</td>
