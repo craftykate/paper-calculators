@@ -5,7 +5,7 @@ import './FractionCalculator.css';
 class FractionCalculator extends Component {
   state = {
     fraction: '',
-    undoneFraction: '',
+    undoneFraction: 'equals: ',
     errorMessage: ''
   }
 
@@ -38,7 +38,7 @@ class FractionCalculator extends Component {
       const entireNumber = (Number(wholeNumber) + decimal).toFixed(2);
       if (!isNaN(entireNumber)) {
         this.setState({
-          undoneFraction: entireNumber
+          undoneFraction: `equals: ${entireNumber}`
         })
       } else {
         this.setState({
@@ -113,7 +113,7 @@ class FractionCalculator extends Component {
             {this.state.errorMessage}
           </p>
           <p style={{display: 'inline', marginLeft: '10px'}}>
-            equals: {this.state.undoneFraction}
+            {this.state.undoneFraction}
           </p>
           <p><a onClick={this.undoFraction}>
             Calculate
