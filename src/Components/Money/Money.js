@@ -14,7 +14,7 @@ const Money = (props) => (
     <img src={money} className="mainImage" alt="" />
     <div className="description">
       <p>This one isn't a calculator because they're all the same size, but I won't tell if you don't.</p>
-      <p>These are great if you're giving cash as a gift and want to dress it up a bit, or if you use cash envelopes for budgeting or saving. Plus they're just cute!</p>
+      <p>These are great if you're giving cash as a gift and want to dress it up a bit, or if you use cash envelopes for budgeting or saving. Plus they're just cute! I designed this one with a thumb hole so you can easily grab your money. If you want more of the bill to show, trim the bottom 1/4{'"'} or so before punching the thumb hole. </p>
     </div>
     <div className="instructions">
       <h3>Instructions:</h3>
