@@ -92,6 +92,7 @@ class FractionCalculator extends Component {
           </p>
           <p>And because my sister wants a calculator that goes the other way, enter your fraction below (like 4 3/16 with a space between whole number and fraction) and click calculate.</p>
           <input
+            value={this.state.fraction}
             onChange={this.updateFraction}
             style={{width: '100px', fontSize: '100%', display: 'inline'}}
           />
