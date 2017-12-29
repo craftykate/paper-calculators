@@ -28,7 +28,6 @@ const Home = (props) => {
       <p>As for paper, I use the giant <a href="http://www.michaels.com/recollections-home-basics-paper-pad/10308867.html" target="_blank" rel="noopener noreferrer">paper pads</a> from the craft store which are a little thicker than normal paper, but you could use pretty much anything you can find (grocery bags, old maps, magazine pages). </p>
       <p>Glue of some sort is needed to keep your creations together. I like glue sticks so the paper doesn't get soggy, but use whatever you have on hand.</p>
       <p>That's about it! Poke around on Pinterest to get some ideas, there are so many creative ways to fold, cut and glue paper!</p>
-      <p><i>Please note this site was mostly built so I can practice programming in ReactJS. Due to some complicated things I'm practicing, there's one kink I haven't figured out yet and that's being able to refresh the page when you're on a subpage. So, don't do that for now and I'll work on figuring out how to fix it. :)</i></p>
     </div>
   );
 }
